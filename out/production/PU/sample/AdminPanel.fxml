@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="generalwindow" cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="932.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminPanel">
+    <children>
+        <AnchorPane layoutX="16.0" layoutY="97.0" prefHeight="471.0" prefWidth="585.0" style="-fx-background-color: white;">
+            <children>
+                <Button fx:id="nextbutton" layoutX="434.0" layoutY="409.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="137.0" style="-fx-border-color: blue; -fx-border-radius: 10; -fx-background-color: white;" text="Продолжить" textFill="BLUE">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="backbutton" layoutX="20.0" layoutY="409.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="137.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Отмена" textFill="BLUE">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Text fill="BLUE" layoutX="66.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ДОБАВЛЕНИЕ УЧЕБНОГО ЗАВЕДЕНИЯ" wrappingWidth="480.04296875">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="25.0" />
+                    </font>
+                </Text>
+                <Text fx:id="text" fill="BLUE" layoutX="54.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ниже приведены параметры, по которым пользователь будет в дальнейшем выбирать учебное заведение. Укажите атрибуты, соответствующие добавляемому учебному заведению." wrappingWidth="504.4375">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                </Text>
+                <TabPane fx:id="tab" layoutX="24.0" layoutY="95.0" prefHeight="286.0" prefWidth="553.0" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab text="Основные параметры">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <ScrollPane fx:id="wind" prefHeight="257.0" prefWidth="553.0" style="-fx-border-color: blue;">
+                                            <content>
+                                                <AnchorPane cache="true" prefHeight="924.0" prefWidth="533.0" style="-fx-background-color: #f4f4f4;">
+                                                    <children>
+                                                        <Text layoutX="112.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Величина необходимого бюджета для обучения">
+                                                            <font>
+                                                                <Font size="14.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <Text layoutX="24.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите оригинальное название учебного заведения:" wrappingWidth="211.4375">
+                                                            <font>
+                                                                <Font size="14.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <TextField fx:id="placeCountry" layoutX="292.0" layoutY="45.0" onKeyTyped="#handlerKeyTyped" prefHeight="25.0" prefWidth="198.0" />
+                                                        <TextField fx:id="placeName" layoutX="25.0" layoutY="45.0" onKeyTyped="#handlerKeyTyped2" prefHeight="25.0" prefWidth="209.0" />
+                                                        <Text layoutX="296.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите страну расположения учебного заведения:" wrappingWidth="209.4375">
+                                                            <font>
+                                                                <Font size="14.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <Slider fx:id="sliderMoneyBag" blockIncrement="0.0" layoutX="45.0" layoutY="142.0" majorTickUnit="50.0" minorTickCount="0" prefHeight="14.0" prefWidth="448.0" showTickMarks="true" snapToTicks="true" value="50.0" />
+                                                        <Text layoutX="44.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Малый бюджет" />
+                                                        <Text layoutX="214.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Средний бюджет" />
+                                                        <Text layoutX="401.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Большой бюджет" />
+                                                        <Text layoutX="125.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Расположение данного учебного заведения">
+                                                            <font>
+                                                                <Font size="14.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <Slider fx:id="sliderDist" blockIncrement="0.0" layoutX="45.0" layoutY="261.0" majorTickUnit="50.0" minorTickCount="0" prefHeight="14.0" prefWidth="448.0" showTickMarks="true" snapToTicks="true" value="50.0" />
+                                                        <Text layoutX="44.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="За городом" />
+                                                        <Text layoutX="227.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В черте города" />
+                                                        <Text layoutX="449.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В центре" />
+                                                        <Text layoutX="183.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Интернациональная среда">
+                                                            <font>
+                                                                <Font size="14.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <Slider fx:id="sliderInternat" blockIncrement="0.0" layoutX="45.0" layoutY="376.0" majorTickUnit="50.0" minorTickCount="0" prefHeight="14.0" prefWidth="448.0" showTickMarks="true" snapToTicks="true" value="50.0" />
+                                                        <Text layoutX="44.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В основном, коренное население" wrappingWidth="119.71875" />
+                                                        <Text layoutX="220.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Смешанная среда" />
+                                                        <Text layoutX="436.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В основном, иностранные студенты" wrappingWidth="83.279296875" />
+                                                        <Text layoutX="158.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Климатические условия в регионе">
+                                                            <font>
+                                                                <Font size="14.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <Slider fx:id="sliderClimate" blockIncrement="0.0" layoutX="44.0" layoutY="524.0" majorTickUnit="50.0" minorTickCount="0" prefHeight="14.0" prefWidth="448.0" showTickMarks="true" snapToTicks="true" value="50.0" />
+                                                        <Text layoutX="38.0" layoutY="561.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Холодный климат" wrappingWidth="119.71875" />
+                                                        <Text layoutX="214.0" layoutY="561.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Умеренный климат" />
+                                                        <Text layoutX="419.0" layoutY="561.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Жаркий климат" />
+                                                        <Text layoutX="147.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Возможности для проведения досуга">
+                                                            <font>
+                                                                <Font size="14.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <Slider fx:id="sliderHobbie" blockIncrement="0.0" layoutX="43.0" layoutY="649.0" majorTickUnit="50.0" minorTickCount="0" prefHeight="14.0" prefWidth="448.0" showTickMarks="true" snapToTicks="true" value="50.0" />
+                                                        <Text layoutX="28.0" layoutY="686.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Отсутствуют. Упор на учебу" wrappingWidth="95.71875" />
+                                                        <Text layoutX="185.0" layoutY="694.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Возможен регулярный отдых" wrappingWidth="164.537109375" />
+                                                        <Text layoutX="391.0" layoutY="686.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Возможен активный отдых и туризм" wrappingWidth="116.71875" />
+                                                        <Text fill="BLUE" layoutX="15.0" layoutY="877.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВНИМАНИЕ! Проверьте параметры, которые вы задали. При пропуске какого-либо из них, данное значение будет зафиксированно по умолчанию!" textAlignment="CENTER" wrappingWidth="504.437501758337">
+                                                            <font>
+                                                                <Font name="Times New Roman Italic" size="12.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <Line endX="244.0" layoutX="261.0" layoutY="104.0" startX="-234.0" />
+                                                        <Line endX="244.0" layoutX="261.0" layoutY="207.0" startX="-234.0" />
+                                                        <Line endX="244.0" layoutX="264.0" layoutY="327.0" startX="-234.0" />
+                                                        <Line endX="244.0" layoutX="264.0" layoutY="470.0" startX="-234.0" />
+                                                        <Line endX="244.0" layoutX="261.0" layoutY="601.0" startX="-234.0" />
+                                                        <Text layoutX="164.0" layoutY="768.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Язык преподавания в заведении">
+                                                            <font>
+                                                                <Font size="14.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <Slider fx:id="sliderLang" blockIncrement="0.0" layoutX="45.0" layoutY="786.0" minorTickCount="0" prefHeight="14.0" prefWidth="448.0" showTickMarks="true" snapToTicks="true" />
+                                                        <Text layoutX="28.0" layoutY="823.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Английский" wrappingWidth="69.71875" />
+                                                        <Text layoutX="228.0" layoutY="823.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Французский" wrappingWidth="77.537109375" />
+                                                        <Text layoutX="455.0" layoutY="822.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Другой" wrappingWidth="44.71875" />
+                                                        <Line endX="244.0" layoutX="263.0" layoutY="738.0" startX="-234.0" />
+                                                        <Text layoutX="128.0" layoutY="823.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Немецкий" wrappingWidth="59.71875" />
+                                                        <Text layoutX="349.0" layoutY="823.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Китайский" wrappingWidth="61.71875" />
+                                                        <Button fx:id="dubl" layoutX="138.0" layoutY="74.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="257.0" text="Проверка названия на наличие дубликатов">
+                                                            <font>
+                                                                <Font size="11.0" />
+                                                            </font>
+                                                            <cursor>
+                                                                <Cursor fx:constant="HAND" />
+                                                            </cursor>
+                                                        </Button>
+                                                        <ImageView fx:id="imgDa" fitHeight="28.0" fitWidth="32.0" layoutX="172.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                            <image>
+                                                                <Image url="@pictures/Da.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                        <Text fx:id="textDa" layoutX="203.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дубликаты отсутствуют!" visible="false" />
+                                                        <ImageView fx:id="imgNet" fitHeight="28.0" fitWidth="32.0" layoutX="62.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                            <image>
+                                                                <Image url="@pictures/Net.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                        <Text fx:id="textNet" layoutX="93.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Заведение уже существует! Продолжайте для его редактирования!" visible="false">
+                                                            <font>
+                                                                <Font name="System Bold" size="12.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </ScrollPane>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="Дополнительная информация">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="257.0" prefWidth="484.0" style="-fx-background-color: #f4f4f4;">
+                                    <children>
+                                        <ScrollPane layoutX="4.0" layoutY="2.0" prefHeight="260.0" prefWidth="547.0" style="-fx-background-color: blue;">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="477.0" prefWidth="529.0">
+                                                    <children>
+                                                        <Text layoutX="25.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите общую справочную информацию о заведении:" wrappingWidth="318.00000305473804" />
+                                                        <TextArea fx:id="txtinfo" layoutX="25.0" layoutY="39.0" prefHeight="93.0" prefWidth="490.0" />
+                                                        <Text layoutX="25.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите информацию по местонахождению заведения:" wrappingWidth="318.00000305473804" />
+                                                        <TextArea fx:id="txtPlace" layoutX="26.0" layoutY="172.0" prefHeight="51.0" prefWidth="489.0" />
+                                                        <Text layoutX="25.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите информацию по интернациональности среды и информацию на ваше усмотрение:" wrappingWidth="410.00000305473804" />
+                                                        <TextArea fx:id="txtInter" layoutX="25.0" layoutY="285.0" prefHeight="88.0" prefWidth="490.0" />
+                                                        <Text layoutX="146.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Каждое поле обязательно для заполнения." />
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </ScrollPane>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+                <ImageView fx:id="imgsave" fitHeight="150.0" fitWidth="200.0" layoutX="234.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                    <image>
+                        <Image url="@pictures/save.png" />
+                    </image>
+                </ImageView>
+                <Text fx:id="textsave" fill="BLUE" layoutX="131.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ваша запись учебного заведения успешно добавлена!" visible="false">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <Label graphicTextGap="5.0" layoutX="30.0" layoutY="14.0" prefHeight="48.0" prefWidth="255.0" text="АССИСТЕНТ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="38.0" />
+            </font>
+        </Label>
+        <Label layoutX="48.0" layoutY="61.0" text="ВЫБОРА УЧЕБНОГО ЗАВЕДЕНИЯ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="12.0" />
+            </font>
+        </Label>
+        <Button fx:id="spravka" layoutX="421.0" layoutY="30.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="137.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-radius: 10;" text="Справка" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <AnchorPane layoutX="618.0" layoutY="97.0" prefHeight="471.0" prefWidth="299.0" style="-fx-background-color: white;">
+            <children>
+                <Text fill="BLUE" layoutX="25.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РЕДАКТИРОВАНИЕ" wrappingWidth="248.04296875">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="25.0" />
+                    </font>
+                </Text>
+                <Text fx:id="text1" fill="BLUE" layoutX="17.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Для редактирования выберете заведение из списка и нажмите &quot;Редактировать&quot;" wrappingWidth="265.0000065565109">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="find" layoutX="75.0" layoutY="94.0" onKeyTyped="#handlerKeyTyped" promptText="Поиск заведения" />
+                <Button fx:id="edit" layoutX="81.0" layoutY="411.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="137.0" style="-fx-border-color: blue; -fx-border-radius: 10; -fx-background-color: white;" text="Редактировать" textFill="BLUE">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Label graphicTextGap="5.0" layoutX="682.0" layoutY="25.0" prefHeight="48.0" prefWidth="180.0" text="СПИСОК" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="38.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

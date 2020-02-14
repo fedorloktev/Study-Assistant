@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="generalwindow" cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Info">
+    <children>
+        <AnchorPane layoutY="97.0" prefHeight="289.0" prefWidth="600.0" style="-fx-background-color: white;">
+            <children>
+                <Button fx:id="nextbutton" layoutX="436.0" layoutY="225.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="137.0" style="-fx-border-color: blue; -fx-border-radius: 10; -fx-background-color: white;" text="К результатам" textFill="BLUE">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="backbutton" layoutX="34.0" layoutY="225.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="107.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Отмена" textFill="BLUE">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Text fill="BLUE" layoutX="162.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПОЛЕЗНАЯ ИНФОРМАЦИЯ" wrappingWidth="287.04296875">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="21.0" />
+                    </font>
+                </Text>
+                <Text fx:id="text1" fill="BLUE" layoutX="150.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(актуально при наличии интернет-соединения)" wrappingWidth="310.4375">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                </Text>
+                <Text fx:id="textsure" fill="BLUE" layoutX="60.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Нажимая данную кнопку, Вы будете перенаправлены на окно выбора этапа тестирования. Вы уверены, что хотите сделать это?" visible="false" wrappingWidth="491.0429656505585">
+                    <font>
+                        <Font name="Times New Roman Italic" size="14.0" />
+                    </font>
+                </Text>
+                <Button fx:id="yes" layoutX="142.0" layoutY="147.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="107.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Да" textFill="BLUE" visible="false">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="no" layoutX="360.0" layoutY="147.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="107.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Нет" textFill="BLUE" visible="false">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            <Button fx:id="buttAvia" layoutX="90.0" layoutY="86.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="433.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Сайт продажи авиабилетов" textFill="BLUE">
+               <font>
+                  <Font name="Times New Roman Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="buttCountry" layoutX="89.0" layoutY="130.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="433.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Сайт списка посольств разных стран на территории России" textFill="BLUE">
+               <font>
+                  <Font name="Times New Roman Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="buttMoney" layoutX="89.0" layoutY="171.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="433.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Онлайн таблица изменения валютных курсов" textFill="BLUE">
+               <font>
+                  <Font name="Times New Roman Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            </children>
+        </AnchorPane>
+        <Label graphicTextGap="5.0" layoutX="30.0" layoutY="14.0" prefHeight="48.0" prefWidth="255.0" text="АССИСТЕНТ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="38.0" />
+            </font>
+        </Label>
+        <Label layoutX="48.0" layoutY="61.0" text="ВЫБОРА УЧЕБНОГО ЗАВЕДЕНИЯ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="12.0" />
+            </font>
+        </Label>
+        <Button fx:id="spravka" layoutX="421.0" layoutY="30.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="137.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-radius: 10;" text="Справка" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+    </children>
+</AnchorPane>

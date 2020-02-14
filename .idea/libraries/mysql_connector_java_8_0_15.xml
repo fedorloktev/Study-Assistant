@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="mysql-connector-java-8.0.15">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/mysql-connector-java-8.0.15/mysql-connector-java-8.0.15/mysql-connector-java-8.0.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/itextpdf-5.5.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javax.mail-api-1.6.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javax.mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jmf.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

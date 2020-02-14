@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="generalwindow" cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.International">
+    <children>
+        <AnchorPane layoutY="97.0" prefHeight="289.0" prefWidth="600.0" style="-fx-background-color: white;">
+            <children>
+                <Button fx:id="nextbutton" layoutX="436.0" layoutY="185.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="137.0" style="-fx-border-color: blue; -fx-border-radius: 10; -fx-background-color: white;" text="Продолжить" textFill="BLUE">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="backbutton" layoutX="466.0" layoutY="221.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="107.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Отмена" textFill="BLUE">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Text fill="BLUE" layoutX="39.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВЫБОР ИНТЕРНАЦИОНАЛЬНОСТИ СРЕДЫ" textAlignment="CENTER" wrappingWidth="521.04296875">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="text" fill="BLUE" layoutX="55.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Подберите себе вариант окружающего вас коллектива, в котором вы бы могли ощущать себя свободно и без напряжения:" wrappingWidth="504.4375">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                </Text>
+                <Text fx:id="text1" fill="BLUE" layoutX="47.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Высоко-интернациональная среда. Частое общение с представителями других стран" wrappingWidth="170.9999978542328">
+                    <font>
+                        <Font name="Times New Roman" size="12.0" />
+                    </font>
+                </Text>
+                <Text fx:id="text2" fill="BLUE" layoutX="47.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Допустимо присутствие иностранцев, но приветствуется коренное население" wrappingWidth="171.0000067949295">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></Text>
+                <Text fx:id="text3" fill="BLUE" layoutX="48.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Практически весь коллектив составляет коренное население страны" wrappingWidth="154.0000067949295">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></Text>
+                <Button fx:id="forwhatInternat" layoutX="402.0" layoutY="98.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Для чего это нужно?" textFill="BLUE">
+                    <font>
+                        <Font name="Times New Roman Italic" size="16.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            <Slider fx:id="sliderInternat" layoutX="355.0" layoutY="91.0" majorTickUnit="50.0" minorTickCount="0" orientation="VERTICAL" prefHeight="174.0" prefWidth="14.0" snapToTicks="true" value="50.0" />
+            <ImageView fx:id="img1" fitHeight="56.0" fitWidth="100.0" layoutX="225.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/HighInternat.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img2" fitHeight="58.0" fitWidth="100.0" layoutX="225.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/LowInternat.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img3" fitHeight="56.0" fitWidth="100.0" layoutX="225.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/NoneInternat.png" />
+               </image>
+            </ImageView>
+            <Line fx:id="line1" endX="198.0" layoutX="149.0" layoutY="139.0" startX="-100.0" stroke="BLUE" />
+            <Line fx:id="line2" endX="196.0" endY="-0.0078125" layoutX="149.0" layoutY="201.0" startX="-101.0" startY="-0.0078125" stroke="BLUE" />
+            <Line fx:id="line3" endX="198.0" layoutX="148.0" layoutY="260.0" startX="-100.0" stroke="BLUE" />
+            <Text fx:id="textsure" fill="BLUE" layoutX="72.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Нажимая данную кнопку, Вы будете перенаправлены на окно выбора этапа тестирования. Вы уверены, что хотите сделать это?" visible="false" wrappingWidth="491.0429656505585">
+               <font>
+                  <Font name="Times New Roman Italic" size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="yes" layoutX="154.0" layoutY="144.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="107.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Да" textFill="BLUE" visible="false">
+               <font>
+                  <Font name="Times New Roman Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="no" layoutX="372.0" layoutY="144.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="107.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Нет" textFill="BLUE" visible="false">
+               <font>
+                  <Font name="Times New Roman Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ToggleButton fx:id="sound" layoutX="523.0" layoutY="136.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" style="-fx-border-color: blue; -fx-background-color: white; -fx-border-radius: 10;">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pictures/play.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ToggleButton>
+            </children>
+        </AnchorPane>
+        <Label graphicTextGap="5.0" layoutX="30.0" layoutY="14.0" prefHeight="48.0" prefWidth="255.0" text="АССИСТЕНТ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="38.0" />
+            </font>
+        </Label>
+        <Label layoutX="48.0" layoutY="61.0" text="ВЫБОРА УЧЕБНОГО ЗАВЕДЕНИЯ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="12.0" />
+            </font>
+        </Label>
+        <Button fx:id="spravka" layoutX="421.0" layoutY="30.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="137.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-radius: 10;" text="Справка" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <ProgressIndicator layoutX="21.0" layoutY="61.0" prefHeight="14.0" prefWidth="27.0" />
+    </children>
+</AnchorPane>

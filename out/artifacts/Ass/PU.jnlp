@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="PU.jnlp">
+  <information>
+    <title>Ass</title>
+    <vendor>r</vendor>
+    <description>rrrr</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="PU.jar" size="86952832" download="eager" />
+    <jar href="itextpdf-5.5.13.jar" size="2320581" download="eager" />
+    <jar href="javax.mail-api-1.6.2.jar" size="219146" download="eager" />
+    <jar href="javax.mail.jar" size="659033" download="eager" />
+    <jar href="jmf.jar" size="1904171" download="eager" />
+    <jar href="src\javax.mail.jar" size="659033" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="900" height="900" main-class="sample.Main"  name="Ass" />
+  <update check="background"/>
+</jnlp>

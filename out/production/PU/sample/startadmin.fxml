@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="generalwindow" cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StartAdmin">
+    <children>
+        <AnchorPane layoutY="97.0" prefHeight="289.0" prefWidth="600.0" style="-fx-background-color: white;">
+            <children>
+                <Button fx:id="join_admin" layoutX="200.0" layoutY="180.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="202.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Войти" textFill="BLUE">
+                    <font>
+                        <Font name="Times New Roman Italic" size="21.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            <Label layoutX="75.0" layoutY="44.0" prefHeight="26.0" prefWidth="450.0" text="Для входа в панель редактирования заполните формы ниже:" textFill="BLUE">
+               <font>
+                  <Font name="Times New Roman Italic" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="admin_login" alignment="TOP_CENTER" layoutX="200.0" layoutY="78.0" promptText="Логин">
+               <font>
+                  <Font name="Times New Roman Italic" size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="admin_password" alignment="TOP_CENTER" layoutX="200.0" layoutY="120.0" prefHeight="32.0" prefWidth="202.0" promptText="Пароль">
+               <font>
+                  <Font name="Times New Roman Italic" size="18.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="back" layoutX="254.0" layoutY="230.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Назад" textFill="BLUE">
+               <font>
+                  <Font name="Times New Roman Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+        </AnchorPane>
+        <Label graphicTextGap="5.0" layoutX="30.0" layoutY="14.0" prefHeight="48.0" prefWidth="255.0" text="АССИСТЕНТ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="38.0" />
+            </font>
+        </Label>
+        <Label layoutX="48.0" layoutY="61.0" text="ВЫБОРА УЧЕБНОГО ЗАВЕДЕНИЯ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="12.0" />
+            </font>
+        </Label>
+        <Button fx:id="spravka" layoutX="421.0" layoutY="30.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="137.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-radius: 10;" text="Справка" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="generalwindow" cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ForWhatMB">
+    <children>
+        <AnchorPane layoutY="97.0" prefHeight="513.0" prefWidth="600.0" style="-fx-background-color: white;">
+            <children>
+                <Text fill="BLUE" layoutX="75.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НА ЧТО ВЛИЯЕТ НАЛИЧИЕ БЮДЖЕТА" textAlignment="CENTER" wrappingWidth="467.04296875">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="textsure" fill="BLUE" layoutX="72.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Нажимая данную кнопку, вы вернетесь в начало тестирования, а все нынешние результаты будут удалены. Вы уверены, что хотите сделать это?" visible="false" wrappingWidth="491.0429656505585">
+                    <font>
+                        <Font name="Times New Roman Italic" size="14.0" />
+                    </font>
+                </Text>
+                <Button fx:id="yes" layoutX="154.0" layoutY="144.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="107.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Да" textFill="BLUE" visible="false">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="no" layoutX="372.0" layoutY="144.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="107.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Нет" textFill="BLUE" visible="false">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            <CheckBox fx:id="never" layoutX="131.0" layoutY="436.0" mnemonicParsing="false" text="Больше не показывать данные подсказки принудительно" />
+            <Button fx:id="next" layoutX="280.0" layoutY="464.0" mnemonicParsing="false" text="Понятно" />
+            <TabPane layoutX="39.0" layoutY="44.0" prefHeight="374.0" prefWidth="539.0" rotateGraphic="true" style="-fx-border-color: blue;" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Влияние на рейтинг">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ScrollPane prefHeight="344.0" prefWidth="539.0">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="647.0" prefWidth="524.0" style="-fx-background-color: white;">
+                                       <children>
+                                          <ImageView fitHeight="125.0" fitWidth="152.0" layoutX="354.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@pictures/MB.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text layoutX="40.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Не смотря на то, что рейтинг лучших учебных заведений мира и список наиболее дорогих заведенийпрактически не пересекается, финансовая составляющая, разумеется, имеет огромное значение при выборе места получения образования за рубежом. " wrappingWidth="317.13671875" />
+                                          <TextArea editable="false" layoutX="199.0" layoutY="147.0" prefHeight="246.0" prefWidth="303.0" text="Каким образом сумма, которую готов вложить &#10;студент в свое образование, оправдывает свои&#10;затраты?&#10;&#10;Как правило, дорогая стоимость обучения &#10;обуславливается не столько статусом и историей&#10;заведения, сколько его технологическим &#10;оснащением. Если в аудиториях стоят современ-&#10;ные компьютеры, в химических лабораториях&#10;активно эксперементируют с реагентами и т.д.&#10;Даже без наличия многовековой истории,&#10;такое учебное заведение будет считаться &#10;более солидным и престижным. &#10;" />
+                                          <Text layoutX="22.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Список лучших вузов мира:" />
+                                          <Text layoutX="28.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. MIT" />
+                                          <Text layoutX="28.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Стэнфордский Университет" />
+                                          <Text layoutX="29.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Гарвардский Университет" />
+                                          <Text layoutX="29.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Калифорнийский TU" />
+                                          <Text layoutX="29.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Кембриджский " />
+                                          <Text layoutX="30.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Оксфордский" />
+                                          <Text layoutX="30.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. UCL" />
+                                          <Line endX="66.0" layoutX="118.0" layoutY="148.0" startX="-90.0" stroke="GREEN" />
+                                          <Line endX="66.0" layoutX="118.0" layoutY="329.0" startX="-90.0" stroke="GREEN" />
+                                          <Text layoutX="322.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Список наиболее дорогих образовательных учреждений  мира:" wrappingWidth="149.00000524520874" />
+                                          <Text layoutX="319.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Sarag Lawrence College" />
+                                          <Text layoutX="319.0" layoutY="519.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Вестминстерский Univers." />
+                                          <Text layoutX="320.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Университет Квест" />
+                                          <Text layoutX="320.0" layoutY="553.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Университет Чикаго" />
+                                          <Text layoutX="320.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Университет Джона Хопкинса" />
+                                          <Text layoutX="321.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Дартмутский колледж" />
+                                          <Text layoutX="321.0" layoutY="606.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. Колледж Клермонт" />
+                                          <Line endX="66.0" layoutX="413.0" layoutY="422.0" startX="-90.0" stroke="GREEN" />
+                                          <Line endX="66.0" layoutX="409.0" layoutY="625.0" startX="-90.0" stroke="GREEN" />
+                                          <TextArea editable="false" layoutX="28.0" layoutY="398.0" prefHeight="227.0" prefWidth="274.0" text="Высокий бюджет дает Вам право получать &#10;образование в самых высокотехнологичных&#10;университетах различных стран. &#10;&#10;Однако, хорошая новость в том, что почти&#10;под любой бюджет можно найти заведение,&#10;которое сможет удовлетворить многие&#10;пожелания и потребности студента.&#10;&#10;Чтобы максимально верно подобрать &#10;рекомендации, советуем Вам объективо&#10;оценить размер своего бюджета." />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Влияние на местоположение">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ScrollPane layoutX="8.0" layoutY="7.0" prefHeight="337.0" prefWidth="528.0">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="634.0" prefWidth="510.0" style="-fx-background-color: white;">
+                                       <children>
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="296.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@pictures/MB2.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text layoutX="22.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Как и любой туристический отель, любое учебное заведение не упустит шанс взымать дополнительную стоимость за красивый вид и отличный пейзаж. Так же студенту придется доплатить и за нахождение заведения в сердце города." wrappingWidth="266.37109375" />
+                                          <Accordion layoutX="22.0" layoutY="187.0" style="-fx-background-color: white; -fx-border-color: blue;">
+                                            <panes>
+                                                <TitledPane prefHeight="199.0" prefWidth="275.0" text="Оксфордский университет">
+                                                  <content>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <ImageView fitHeight="182.0" fitWidth="290.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@pictures/MBoxf.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </children>
+                                                      </AnchorPane>
+                                                  </content>
+                                                </TitledPane>
+                                              <TitledPane prefHeight="201.0" prefWidth="277.0" text="Кембриджский университет">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <ImageView fitHeight="210.0" fitWidth="296.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@pictures/MBcemb.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </children>
+                                                      </AnchorPane>
+                                                </content>
+                                              </TitledPane>
+                                              <TitledPane prefHeight="213.0" prefWidth="275.0" text="Лондонский университет">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <ImageView fitHeight="187.0" fitWidth="281.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@pictures/MBlondon.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </children>
+                                                      </AnchorPane>
+                                                </content>
+                                              </TitledPane>
+                                              <TitledPane text="Чикагский университет">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <ImageView fitHeight="196.0" fitWidth="296.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@pictures/MBchic.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </children>
+                                                      </AnchorPane>
+                                                </content>
+                                              </TitledPane>
+                                            </panes>
+                                          </Accordion>
+                                          <TextArea editable="false" layoutX="311.0" layoutY="187.0" prefHeight="357.0" prefWidth="198.0" text="Слева располагается меню,&#10;которое наглядно показывает,&#10;почему именно данные и &#10;другие университеты берут&#10;дополнительную плату еще и &#10;за то, что находятся в истори-&#10;ческих и живописных местах.&#10;&#10;Часть этой истории возникла&#10;как раз благодаря данным &#10;университетам, именно эта &#10;историческая и культурная&#10;ценность влияет на стоимость.&#10;&#10;А значит, размер бюджета &#10;еще и влияет на то, какими&#10;пейзажами студент будет&#10;любоваться и наблюдать, &#10;проходя обучение в одном&#10;из таких университетов." />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Влияние на интернациональнось">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="312.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@pictures/MBinter.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="32.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Интернациональность коллектива, в который на несколько лет погружается студент, так же важна как и остальные аспекты. Однако, даже на этот вопрос косвенно влияет размер бюджета." wrappingWidth="279.115234375" />
+                              <TextArea editable="false" layoutX="35.0" layoutY="172.0" prefHeight="153.0" prefWidth="467.0" text="В учебных заведениях, где стоимость обучения не так высока, всегда велик&#10;шанс натолкнуться на коллектив, члены которого будут представителями самых&#10;разных стран. Такие учреждения превликают студентов со всего мира своей&#10;невысокой ценой за обучение.&#10;&#10;Напротив же, более дорогие и престижные заведения имеют зачастую более&#10;коренной коллектив, либо шанс встретиться с иностранцем будет заметно ниже." />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            </children>
+        </AnchorPane>
+        <Label graphicTextGap="5.0" layoutX="30.0" layoutY="14.0" prefHeight="48.0" prefWidth="255.0" text="АССИСТЕНТ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="38.0" />
+            </font>
+        </Label>
+        <Label layoutX="48.0" layoutY="61.0" text="ВЫБОРА УЧЕБНОГО ЗАВЕДЕНИЯ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="12.0" />
+            </font>
+        </Label>
+      <Label graphicTextGap="5.0" layoutX="276.0" layoutY="27.0" prefHeight="48.0" prefWidth="287.0" text="ИНФОРМАЦИЯ" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="38.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.ProgressIndicator?>
+<AnchorPane cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Spravka">
+    <children>
+        <AnchorPane layoutY="97.0" prefHeight="289.0" prefWidth="600.0" style="-fx-background-color: white;">
+            <children>
+                <TextArea editable="false" layoutX="42.0" layoutY="21.0" prefHeight="200.0" prefWidth="517.0" style="-fx-border-color: blue;" text="Добро пожаловать в &quot;Ассистент выбора зарубежного учебного заведения&quot;! Данный &#10;программный продукт поможет вам, если вы остановились перед выбором, в какое &#10;образовательное учреждение поступить с тем условием, что оно должно находиться &#10;за границей! Так же данный продукт предлагает съэкономить время тем, кто является&#10;представителем агентства зарубежного образования.&#10;&#10;Ниже будут преведены некоторые рекомендации к использованию данного &#10;программного обеспечения:&#10;- для максимально точного получения результата рекомендуется не пропускать ни &#10;одного окна программы, не дав какого-либо ответа,&#10;- во время прохождения данной программы от вас могут потребоваться ответы и &#10;реакция различного типа, старайтесь максимально честно отвечать на поставленные&#10;вопросы. От ваших ответов напрямую зависит конечный результат работы &#10;программы&#10;- контент данного продукта периодически пополняется, чтобы получить программу&#10;с самыми актуальными данными, сделайте письменный запрос разработчику на почту &#10;fredloktev@yahoo.com&#10;- для сохранения результатов, воспользуйтесь формой отправки информации на &#10;электронную почту. Просьба указывать личную почту, либо почту третьего лица,&#10;которому потребуются Ваши результаты прохождения тестирования,&#10;- если вы являетесь редактором данного продукта и имеете код доступа, вы можете&#10;войти в &quot;Панель редактирования&quot; из главного меню программы,&#10;- редактор в состоянии самостоятельно вносить актуальную информацию в базы &#10;данных предоставляемого продукта.&#10;&#10;ВСЕ УКАЗАННЫЕ РЕКОМЕНДАЦИИ БУДУТ ДОСТУПНЫ ВАМ В ЛЮБОЙ МОМЕНТ ПРИ&#10;НАЖАТИИ КНОПКИ &quot;СПРАВКА&quot; В ПРАВОМ ВЕРХНЕМ УГЛУ ПРОГРАММЫ!" />
+                <Button fx:id="backstart" layoutX="271.0" layoutY="235.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Назад">
+                    <font>
+                        <Font name="Times New Roman Italic" size="14.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Label graphicTextGap="5.0" layoutX="30.0" layoutY="14.0" prefHeight="48.0" prefWidth="255.0" text="АССИСТЕНТ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="38.0" />
+            </font>
+        </Label>
+        <Label layoutX="48.0" layoutY="61.0" text="ВЫБОРА УЧЕБНОГО ЗАВЕДЕНИЯ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="12.0" />
+            </font>
+        </Label>
+      <Label layoutX="380.0" layoutY="29.0" text="СПРАВКА" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="34.0" />
+         </font>
+      </Label>
+        <ProgressIndicator layoutX="21.0" layoutY="61.0" prefHeight="14.0" prefWidth="27.0" />
+    </children>
+</AnchorPane>

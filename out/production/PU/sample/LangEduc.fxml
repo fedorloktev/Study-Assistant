@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="generalwindow" cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LangEduc">
+    <children>
+        <AnchorPane layoutY="97.0" prefHeight="289.0" prefWidth="600.0" style="-fx-background-color: white;">
+            <children>
+                <Button fx:id="nextbutton" layoutX="436.0" layoutY="225.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="137.0" style="-fx-border-color: blue; -fx-border-radius: 10; -fx-background-color: white;" text="Продолжить" textFill="BLUE">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="backbutton" layoutX="34.0" layoutY="225.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="107.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Отмена" textFill="BLUE">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Text fill="BLUE" layoutX="74.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВЫБОР ЯЗЫКА ПРЕПОДАВАНИЯ" wrappingWidth="451.04296875">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="28.0" />
+                    </font>
+                </Text>
+                <Text fx:id="textx" fill="BLUE" layoutX="74.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберете, на каком языке Вам хотелось бы получать образование в желаемом учебном заведении: " wrappingWidth="451.04296803474426">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                </Text>
+                <Button fx:id="forwhatLang" layoutX="184.0" layoutY="224.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Для чего это нужно?" textFill="BLUE">
+                    <font>
+                        <Font name="Times New Roman Italic" size="16.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            <ImageView fx:id="img1" fitHeight="48.0" fitWidth="74.0" layoutX="40.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/Engl.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img2" fitHeight="48.0" fitWidth="74.0" layoutX="150.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/Deut.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img3" fitHeight="48.0" fitWidth="83.0" layoutX="271.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/Franc.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img4" fitHeight="48.0" fitWidth="74.0" layoutX="385.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/CHina.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img5" fitHeight="48.0" fitWidth="74.0" layoutX="489.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/Ques.png" />
+               </image>
+            </ImageView>
+            <ToggleButton fx:id="englbutt" layoutX="25.0" layoutY="102.0" mnemonicParsing="false" opacity="0.3" prefHeight="101.0" prefWidth="98.0" style="-fx-border-color: blue;" />
+            <ToggleButton fx:id="deutbutt" layoutX="135.0" layoutY="102.0" mnemonicParsing="false" opacity="0.3" prefHeight="101.0" prefWidth="102.0" style="-fx-border-color: blue;" />
+            <ToggleButton fx:id="frenchbutt" layoutX="253.0" layoutY="102.0" mnemonicParsing="false" opacity="0.3" prefHeight="101.0" prefWidth="106.0" style="-fx-border-color: blue;" />
+            <ToggleButton fx:id="chinbutt" layoutX="371.0" layoutY="102.0" mnemonicParsing="false" opacity="0.3" prefHeight="101.0" prefWidth="98.0" style="-fx-border-color: blue;" />
+            <ToggleButton fx:id="morebutt" layoutX="481.0" layoutY="102.0" mnemonicParsing="false" opacity="0.3" prefHeight="101.0" prefWidth="91.0" style="-fx-border-color: blue;" />
+            <Text fx:id="text1" layoutX="42.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Английский" />
+            <Text fx:id="text2" layoutX="156.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Немецкий" />
+            <Text fx:id="text3" layoutX="269.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Французский" />
+            <Text fx:id="text4" layoutX="391.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Китайский" />
+            <Text fx:id="text5" layoutX="503.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Другой" />
+            <Text fx:id="textsure" fill="BLUE" layoutX="54.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Нажимая данную кнопку, Вы будете перенаправлены на окно выбора этапа тестирования. Вы уверены, что хотите сделать это?" visible="false" wrappingWidth="491.0429656505585">
+               <font>
+                  <Font name="Times New Roman Italic" size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="yes" layoutX="136.0" layoutY="141.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="107.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Да" textFill="BLUE" visible="false">
+               <font>
+                  <Font name="Times New Roman Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="no" layoutX="354.0" layoutY="141.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="107.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="Нет" textFill="BLUE" visible="false">
+               <font>
+                  <Font name="Times New Roman Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ToggleButton fx:id="sound" layoutX="354.0" layoutY="224.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" style="-fx-border-color: blue; -fx-background-color: white; -fx-border-radius: 10;">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pictures/play.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ToggleButton>
+            </children>
+        </AnchorPane>
+        <Label graphicTextGap="5.0" layoutX="30.0" layoutY="14.0" prefHeight="48.0" prefWidth="255.0" text="АССИСТЕНТ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="38.0" />
+            </font>
+        </Label>
+        <Label layoutX="48.0" layoutY="61.0" text="ВЫБОРА УЧЕБНОГО ЗАВЕДЕНИЯ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="12.0" />
+            </font>
+        </Label>
+        <Button fx:id="spravka" layoutX="421.0" layoutY="30.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="137.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-radius: 10;" text="Справка" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <ProgressIndicator layoutX="21.0" layoutY="61.0" prefHeight="14.0" prefWidth="27.0" />
+    </children>
+</AnchorPane>

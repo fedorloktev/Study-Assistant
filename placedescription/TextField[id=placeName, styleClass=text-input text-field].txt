@@ -1,0 +1,1 @@
+SYS1 TextArea[id=txtinfo, styleClass=text-input text-area] SYS2 TextArea[id=txtPlace, styleClass=text-input text-area] SYS3 TextArea[id=txtInter, styleClass=text-input text-area] SYS4 

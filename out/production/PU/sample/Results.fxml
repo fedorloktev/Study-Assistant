@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="generalwindow" cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Results">
+    <children>
+        <AnchorPane fx:id="text1" layoutY="97.0" prefHeight="326.0" prefWidth="600.0" style="-fx-background-color: white;">
+            <children>
+                <Button fx:id="backbutton" layoutX="410.0" layoutY="237.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="176.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-radius: 10;" text="В начало тестирования" textFill="BLUE">
+                    <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Text fill="BLUE" layoutX="227.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РЕЗУЛЬТАТЫ" wrappingWidth="146.04296875">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="21.0" />
+                    </font>
+                </Text>
+            <Text fill="BLUE" layoutX="41.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Заведения, отвечающие всем вашим требованиям:" wrappingWidth="169.076171875">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Text>
+            <ScrollPane layoutX="41.0" layoutY="83.0" prefHeight="89.0" prefWidth="200.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="252.0" prefWidth="184.0" style="-fx-background-color: white;">
+                     <children>
+                        <RadioButton fx:id="butt1" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <RadioButton fx:id="butt2" layoutX="14.0" layoutY="30.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <RadioButton fx:id="butt3" layoutX="14.0" layoutY="55.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <RadioButton fx:id="butt4" layoutX="14.0" layoutY="81.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <RadioButton fx:id="butt5" layoutX="14.0" layoutY="109.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <RadioButton fx:id="butt6" layoutX="14.0" layoutY="138.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <RadioButton fx:id="butt7" layoutX="14.0" layoutY="167.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <RadioButton fx:id="butt8" layoutX="14.0" layoutY="192.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <RadioButton fx:id="butt9" layoutX="14.0" layoutY="221.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <ImageView fx:id="noplace" fitHeight="89.0" fitWidth="216.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pictures/NoPlace.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Button fx:id="savenote" layoutX="410.0" layoutY="45.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="176.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-border-color: blue;" text="Сохранить требования" textFill="BLUE">
+               <font>
+                  <Font name="Times New Roman Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="saveplace" layoutX="410.0" layoutY="83.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="176.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-border-color: blue;" text="Сохранить заведения" textAlignment="CENTER" textFill="BLUE">
+               <font>
+                  <Font name="Times New Roman Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="sendmail" layoutX="410.0" layoutY="121.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="176.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-border-color: blue;" text="Отправка на почту" textAlignment="CENTER" textFill="BLUE">
+               <font>
+                  <Font name="Times New Roman Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="exit" layoutX="410.0" layoutY="274.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="176.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-border-color: blue;" text="Выйти из программы" textAlignment="CENTER" textFill="BLUE">
+               <font>
+                  <Font name="Times New Roman Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="more" layoutX="270.0" layoutY="237.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="112.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-border-color: blue;" text="Подробнее" textAlignment="CENTER" textFill="BLUE">
+               <font>
+                  <Font name="Times New Roman Italic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fill="BLUE" layoutX="265.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Чтобы просмотреть основную информацию об учебном заведении, его расположение и параметры, выберете его из списка и нажмите &quot;Подробнее&quot;" textAlignment="CENTER" wrappingWidth="121.00000271201134">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="BLUE" layoutX="41.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Заведения, отвечающие большинству требований:" wrappingWidth="169.076171875">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Text>
+            <ScrollPane layoutX="41.0" layoutY="215.0" prefHeight="89.0" prefWidth="200.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="261.0" prefWidth="184.0" style="-fx-background-color: white;">
+                     <children>
+                        <RadioButton fx:id="Nbutt1" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <RadioButton fx:id="Nbutt2" layoutX="14.0" layoutY="39.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <RadioButton fx:id="Nbutt3" layoutX="14.0" layoutY="64.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <RadioButton fx:id="Nbutt4" layoutX="14.0" layoutY="88.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <RadioButton fx:id="Nbutt5" layoutX="14.0" layoutY="114.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <RadioButton fx:id="Nbutt6" layoutX="14.0" layoutY="137.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <RadioButton fx:id="Nbutt7" layoutX="14.0" layoutY="162.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <RadioButton fx:id="Nbutt8" layoutX="14.0" layoutY="186.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <RadioButton fx:id="Nbutt9" layoutX="14.0" layoutY="210.0" mnemonicParsing="false" text="RadioButton" visible="false" />
+                        <ImageView fx:id="Nnoplace" fitHeight="89.0" fitWidth="216.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pictures/NoPlace.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            </children>
+        </AnchorPane>
+        <Label graphicTextGap="5.0" layoutX="30.0" layoutY="14.0" prefHeight="48.0" prefWidth="255.0" text="АССИСТЕНТ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="38.0" />
+            </font>
+        </Label>
+        <Label layoutX="48.0" layoutY="61.0" text="ВЫБОРА УЧЕБНОГО ЗАВЕДЕНИЯ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="12.0" />
+            </font>
+        </Label>
+        <Button fx:id="spravka" layoutX="421.0" layoutY="30.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="137.0" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-radius: 10;" text="Справка" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+    </children>
+</AnchorPane>

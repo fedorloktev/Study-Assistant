@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="generalwindow" cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ForWhatHobb">
+    <children>
+        <AnchorPane layoutY="97.0" prefHeight="513.0" prefWidth="600.0" style="-fx-background-color: white;">
+            <children>
+                <Text fill="BLUE" layoutX="102.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НА ЧТО ВЛИЯЕТ ОТДЫХ И ДОСУГ" textAlignment="CENTER" wrappingWidth="420.04296875">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="24.0" />
+                    </font>
+                </Text>
+                <ScrollPane layoutY="70.0" prefHeight="364.0" prefWidth="600.0">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="480.0" prefWidth="583.0" style="-fx-background-color: white;">
+                            <children>
+                                <Text layoutX="292.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="С отдыхом и времяприпровождением все понятно. Тут тема строго персональная, стоит заметить лишь то, что выбирая учебное заведение с возможностью активного отдыха, вполне возможно, что цена на такие заведения будет чуть выше. Продиктовано это все той же выгодой, которую получает учебное заведение благодаря такому расположению." textAlignment="JUSTIFY" wrappingWidth="270.00000524520874" />
+                                <ImageView fitHeight="169.0" fitWidth="255.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@pictures/hobb1.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="347.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@pictures/hobb2.png" />
+                                    </image>
+                                </ImageView>
+                                <Text layoutX="34.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сама суть отдыха будет так же зависеть от выбранного варианта. Вы можете искать учебное заведение, где нагрузка будет так велика, что у вас не будет оставаться времени ни на что, кроме учебы. Так же предсмотрен вариант средней нагрузки, когда у вас будет время и силы собраться и отдохнуть в компании друзей.  В любом случае, любой из этих вариантов на прямую зависит не только от местоположения учебного заведения, но и от интенсивности академической программы." textAlignment="JUSTIFY" wrappingWidth="304.00000524520874" />
+                                <TextField editable="false" layoutX="63.0" layoutY="419.0" prefHeight="42.0" prefWidth="488.0" text="Выбирайте наиболее подходящий для вас вариант отдыха!">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                </TextField>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </ScrollPane>
+                <CheckBox fx:id="never" layoutX="131.0" layoutY="436.0" mnemonicParsing="false" text="Больше не показывать данные подсказки принудительно" />
+                <Button fx:id="next" layoutX="280.0" layoutY="464.0" mnemonicParsing="false" text="Понятно" />
+            </children>
+        </AnchorPane>
+        <Label graphicTextGap="5.0" layoutX="30.0" layoutY="14.0" prefHeight="48.0" prefWidth="255.0" text="АССИСТЕНТ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="38.0" />
+            </font>
+        </Label>
+        <Label layoutX="48.0" layoutY="61.0" text="ВЫБОРА УЧЕБНОГО ЗАВЕДЕНИЯ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="12.0" />
+            </font>
+        </Label>
+        <Label graphicTextGap="5.0" layoutX="276.0" layoutY="27.0" prefHeight="48.0" prefWidth="287.0" text="ИНФОРМАЦИЯ" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="38.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
